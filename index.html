@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Donation</title>
+  </head>
+  <body>
+    <!-- navber -->
+    <nav class="sticky top-0 z-10 bg-gray-200 opacity-90">
+      <div class="navbar w-4/5 mx-auto">
+        <div class="navbar-start">
+          <button id="blog" class="btn btn-accent">Blog</button>
+        </div>
+        <div class="navbar-center flex justify-center gap-1 items-center">
+          <img src="./assets/logo.png" width="30" alt="" />
+          <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end">
+          <h1 class="text-xl font-bold flex gap-1 justify-center items-center">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-orange-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </span>
+            <span id="total_amount">55000</span> <span>BDT</span>
+          </h1>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- donation button navbar -->
+      <div class="mt-10 text-center">
+        <button id="donation" class="btn btn-accent">Donation</button>
+        <button id="history" class="btn">History</button>
+      </div>
+    </nav>
+    <!-- donation card -->
+    <main id="main" class="">
+      <section class="w-4/5 mx-auto mt-3">
+        <div class="hero border border-gray-300 rounded-lg">
+          <div class="hero-content flex-col lg:flex-row gap-11">
+            <div>
+              <img
+                src="./assets/quota-protest.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col justify-between gap-2 w-100">
+              <div class="w-30 flex gap-1 items-center bg-gray-300 p-2 rounded">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span id="quta_amount" class="donation_amount">2400</span>
+                <span>BDT</span>
+              </div>
+              <h1 id="quta_title" class="text-xl font-bold">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p>
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
+              </p>
+              <div>
+                <input
+                  type="number"
+                  id="quta_input"
+                  placeholder="Write Donation Amount"
+                  class="input input-accent w-full"
+                />
+                <button id="quta_btn" class="btn btn-accent block w-full mt-2">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-4/5 mx-auto mt-3">
+        <div class="hero border border-gray-300 rounded-lg">
+          <div class="hero-content flex-col lg:flex-row gap-11">
+            <div>
+              <img
+                src="./assets/feni.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col justify-between gap-2 w-100">
+              <div
+                class="w-30 amount flex gap-1 items-center bg-gray-300 p-2 rounded"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span id="feni_amount" class="donation_amount">600</span>
+                <span>BDT</span>
+              </div>
+              <h1 id="feni_title" class="text-xl font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p>
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
+              <div>
+                <input
+                  type="text"
+                  id="feni_input"
+                  placeholder="Write Donation Amount"
+                  class="input input-accent w-full"
+                />
+                <button id="feni_btn" class="btn btn-accent block w-full mt-2">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-4/5 mx-auto mt-3">
+        <div class="hero border border-gray-300 rounded-lg">
+          <div class="hero-content flex-col lg:flex-row gap-11">
+            <div>
+              <img
+                src="./assets/noakhali.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col justify-between gap-2 w-100">
+              <div
+                class="w-30 amount flex gap-1 items-center bg-gray-300 p-2 rounded"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-orange-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span id="noakhali_amount" class="dontation_amount">0</span>
+                <span>BDT</span>
+              </div>
+              <h1 id="noakhali_title" class="text-xl font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p>
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div>
+                <input
+                  type="number"
+                  id="noakhali_input"
+                  placeholder="Write Donation Amount"
+                  class="input input-accent w-full"
+                />
+                <button
+                  id="noakhali_btn"
+                  class="btn btn-accent block w-full mt-2"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- history section -->
+    <section id="history_section" class="hidden w-4/5 mx-auto">
+      <div class="border border-gray-300 mt-5 p-5 rounded-md"></div>
+    </section>
+    <script src="utilities.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
